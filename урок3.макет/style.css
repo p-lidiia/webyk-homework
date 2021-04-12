@@ -1,0 +1,70 @@
+body {
+    font-family: 'Dela Gothic One', cursive;
+}
+
+.firstDiv {background-color: pink;
+    margin-top: 20px;
+width: 200px;
+height: 100px;
+padding: 20px;}
+
+.secondDiv {background-color: orange;
+width: 200px;height: 100px;
+padding: 20px;
+margin-top: -35px;
+margin-left:  20px;
+margin-bottom: 50px;}
+
+header {background-image: url('https://roofandbuildingservice.com.au/wp-content/uploads/2018/05/Tiled-roof-repair-and-maintenance.jpg');}
+main {background-image: url('https://img.rawpixel.com/s3fs-private/rawpixel_images/website_content/v462-n-130-textureidea_1.jpg?w=800&dpr=1&fit=default&crop=default&q=65&vib=3&con=3&usm=15&bg=F4F4F3&ixlib=js-2.2.1&s=9465282a2b0a375f4f5b120d7bbad882');
+height: 600px;
+background-repeat: round;
+color: white;
+padding: 30px 50px}
+footer {background-image:url('https://rdcnewscdn.realtor.com/wp-content/uploads/2019/11/hardwood-floor.jpg') ;}
+
+
+li{display: inline-block;
+margin: 5px 25px;}
+
+li a {text-decoration: none;
+color: white;
+text-transform: uppercase;}
+
+li a:hover {color:green; 
+   }
+
+ul {
+margin: 20px 0;
+font-size: 11px;
+float: right;}
+
+.logo {width: 30px;
+display: inline-block;
+margin: 20px;
+border-radius: 50px;
+box-shadow: 0px 0px 7px white;}
+
+h1{color: white;
+text-align: center;
+text-transform: uppercase;
+letter-spacing: 3px;
+line-height: 1.5;
+width: 600px;
+margin: 10px auto;}
+
+p{color: white;
+width: 400px;
+margin: 0 auto;
+padding-bottom: 20px;
+text-align: center;}
+
+h1:hover{color: green;
+text-shadow: 1px 1px 10px white;
+}
+
+.line {width: 500px;
+height: 2px;
+margin: 20px auto;
+background-color: white;}
+

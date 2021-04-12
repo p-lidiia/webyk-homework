@@ -1,0 +1,23 @@
+body {background-image: url('https://i.pinimg.com/originals/4d/1e/2e/4d1e2e6c0abd352d2543fd20162942d9.jpg');
+background-repeat: no-repeat;
+margin: 10px;
+}
+.container {background-color: red;
+display: inline-block;}
+
+.item {width: 170px;
+height: 100px;
+background-color: darkblue;
+margin: 30px 13px 10px 13px;
+float: left;}
+
+.gallery {column-count: 2;}
+
+.picture {width: 450px;
+padding-top:15px;
+padding-bottom: 30px;
+padding-left: 10px;
+padding-right: 10px;
+display: block;}
+
+
