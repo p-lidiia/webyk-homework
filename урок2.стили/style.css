@@ -12,6 +12,7 @@ margin: 30px 13px 10px 13px;
 float: left;}
 
 .gallery {column-count: 2;}
+/* можем мы блок галереи выставить по центру страницы? */
 
 .picture {width: 450px;
 padding-top:15px;
