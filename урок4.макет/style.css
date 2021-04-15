@@ -1,0 +1,211 @@
+body {
+    font-family: 'Dela Gothic One', cursive;
+    width: 1200px;
+    margin: 0;
+}
+
+.firstDiv {background-color: pink;
+    margin: 20px;
+width: 200px;
+height: 100px;
+padding: 40px;}
+
+.secondDiv {background-color: orange;
+width: 200px;height: 100px;
+padding: 20px;
+margin-top: -35px;
+margin-left:  50px;
+margin-bottom: 50px; padding: 20px;}
+
+header {background-image: url('https://roofandbuildingservice.com.au/wp-content/uploads/2018/05/Tiled-roof-repair-and-maintenance.jpg');}
+main {background-image: url('https://img.rawpixel.com/s3fs-private/rawpixel_images/website_content/v462-n-130-textureidea_1.jpg?w=800&dpr=1&fit=default&crop=default&q=65&vib=3&con=3&usm=15&bg=F4F4F3&ixlib=js-2.2.1&s=9465282a2b0a375f4f5b120d7bbad882');
+height: fit-content;
+background-repeat: round;
+color: white;
+padding: 30px 0}
+footer {background-image:url('https://rdcnewscdn.realtor.com/wp-content/uploads/2019/11/hardwood-floor.jpg') ;}
+
+
+li{display: inline-block;
+margin: 5px 25px;}
+
+li a {text-decoration: none;
+color: white;
+text-transform: uppercase;}
+
+li a:hover {color:green; 
+   }
+
+ul {
+margin: 20px 0;
+font-size: 11px;
+float: right;}
+
+.logo {width: 30px;
+display: inline-block;
+margin: 20px;
+border-radius: 50px;
+box-shadow: 0px 0px 7px white;}
+
+h1{color: white;
+text-align: center;
+text-transform: uppercase;
+letter-spacing: 3px;
+line-height: 1.5;
+width: 600px;
+margin: 10px auto;}
+
+header p{color: white;
+width: 400px;
+margin: 0 auto;
+padding-bottom: 20px;
+text-align: center;}
+
+h1:hover{color: green;
+text-shadow: 1px 1px 10px white;
+}
+
+.line {width: 500px;
+height: 2px;
+margin: 30px auto;
+background-color: white;}
+
+.servivesUl {width: 800px;
+}
+.servivesUl ul li {display: inline-block; 
+}
+
+.servicesColumns {width: 80%;
+column-count: 3;
+margin: 20px;}
+
+.titleServ {text-transform: uppercase;
+font-size: 26px;
+text-align: center;
+display: block;
+width: fit-content;
+margin: 0 auto;
+}
+.servicesSimple{width: 95%;
+margin: 0 auto;}
+
+.servicesSimple div {width: 95%;
+padding: 10px;
+}
+
+.sFlex {display: flex;
+width: 90%;
+margin: 0 auto;}
+
+.sFlex div{
+    width: 33%;
+}
+.servicesImg1, .servicesImg2 {width: 50px;
+height: 50px;
+display: block;
+margin: 0 auto;
+background-size: 100%;
+background-color: transparent;
+filter: invert(1);}
+
+.servicesImg1{background-image: url('https://image.flaticon.com/icons/png/512/14/14033.png');}
+
+.servicesImg2{background-image: url('https://img.icons8.com/pastel-glyph/2x/online-support.png');}
+
+.servText {font-size: 12px;
+padding: 10px;
+width: 25%;
+text-align: center;
+line-height: 2;}
+
+.servText img {width: 50px;
+margin: 0 auto;
+filter: invert(1)}
+
+h2 {text-align: center;
+margin: 0 auto;
+width: 800px;}
+
+.hrLine {color: white;
+width: 40%;
+margin: 30px auto;}
+
+.mainPart {height: 600px;
+width: 100%;
+margin-top: 20px;
+background-color: rgba(255, 255, 255, 0.3);}
+
+.mainOther{width: 62%;
+display: inline-block;
+padding: 0 20px ;
+}
+
+.mainPic{width: 34%;
+    height: 100%;
+background-image: url('https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQgUxUlcSCphIgV2o-78rA1PDmY48-CgpKgtg&usqp=CAU');
+background-size: 100%;
+float: left;}
+
+.mainOther h3 {width: 670px;
+margin: 20px auto;
+font-size: 33px;
+padding-left: 15px;}
+
+.expertises {column-count: 2;
+font-size: 11px;
+padding: 0 20px;}
+
+.expertises div {margin: 0 10px;
+margin-bottom: 30px;}
+
+.expertises p {text-transform: uppercase;
+padding: 0;
+margin: 10px 0;
+margin-block-start: 0;
+font-size:20px;
+color:lightgrey}
+
+.expertises img {width: 40px;
+filter: invert(1);
+position: relative;
+top: 10px;
+margin-right: 10px;}
+
+.expertises:first-child {color:red;}
+
+.team{width: 80%;
+margin: 0 auto;}
+
+.members{display:inline-block;
+width: 33%;}
+
+.name, .position {text-align: center;}
+.position {font-size: 12px;}
+.members img {border-radius: 50%;
+width: 200px;
+height: 200px;
+margin: 0 auto;
+display: block;}
+
+.media {width: fit-content;
+margin: 10px auto;}
+
+.media img {width: 50px;
+    height: 50px;
+display: inline-block;
+margin: 10px;}
+
+.team h2{text-transform: uppercase;
+font-size: 30px;
+margin: 20px auto;}
+
+.team p {text-align: center;
+width: 600px;
+margin: 20px auto;}
+
+.members p {width: fit-content;}
+
+footer h3 {text-transform: uppercase;
+font-size: 34px;
+margin: 0;
+padding: 50px;}

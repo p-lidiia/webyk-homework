@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Credit Card</title>
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+<link href="https://fonts.googleapis.com/css2?family=ZCOOL+QingKe+HuangYou&display=swap" rel="stylesheet">
+    <style>
+.container {padding: 50px;
+background-color: bisque;
+width: 1000px;
+font-family: 'ZCOOL QingKe HuangYou', cursive;}
+
+.cardBody {width: 600px;
+height: 400px;
+border-radius: 20px;
+background-color: yellow;
+margin: 20px;
+padding: 0 40px;
+box-shadow: 0px 0px 10px 0px;}
+
+.logo {background-image: url('https://logobank.uz:8005/media/logos_png/ipoteka-01.png');
+background-size: 100px 100px;
+width: 100px;
+height: 100px;
+display: block;}
+
+.chip {background-image: url('https://cdn.pixabay.com/photo/2016/03/31/20/07/board-1295513_960_720.png');
+background-size: 120px 80px;
+width: 120px;height: 80px;
+display: inline-block;}
+
+.nfc{background-image: url('https://cdn3.iconfinder.com/data/icons/computers-programming/512/NFC-512.png');
+background-size: 80px 80px;
+width: 80px;
+height: 50px;
+background-color: transparent;
+filter: invert(1);
+float: right;}
+
+.hologram, .hologramBack {background-image: url('https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcST_zYE0G24e6kpdjQHjNqF5XZMYDv7nydyC4_43ItxBlIM3PI9iFKgiHYyaIvU7sbRkrw&usqp=CAU');
+background-size: 100px 80px;
+    background-position: -6px -17px;
+
+    width: 90px;
+    height: 46px;
+    border-radius: 11px;}
+
+.hologram {  float: right;}
+
+.hologramBack {float: left;
+margin-top: 17%;}
+
+.cardData{letter-spacing: 15px;
+font-size: 25px;}
+
+.cardNumber {font-size: 35px;}
+
+.text {font-family: sans-serif; 
+    font-weight: 400; 
+    font-size: 14px; 
+    display: inline-block;
+margin: 0 5% 0 30%}
+
+.visa{background-image: url('https://w7.pngwing.com/pngs/698/862/png-transparent-credit-card-logo-encapsulated-postscript-visa-eps-blue-cdr-text.png');
+    float: right;
+    background-size: 100px 55px;
+    background-position: -23px -10px;
+    width: 52px;
+    height: 34px;}
+
+
+    .back{background-image: linear-gradient(to bottom, yellow 0 10%, black 10% 25%, yellow 25% 100%);}
+
+    .back .cardNumber, .back .cardData {transform: scaleX(-1);
+    color: rgba(0, 0, 0, 0.4);}
+
+    .back .cardNumber {margin-top: 2%;}
+
+    .back .text {margin-left: 2%;
+    padding-top: 10px;}
+
+    .backText {float: right;
+    MARGIN-TOP: 11%;
+    DISPLAY: INLINE-BLOCK;
+    FONT-SIZE: 10PX;}
+    
+    .back :nth-child(7){padding-left: 39%;}
+
+    .securityLine{display: inline-block;
+    width:250px;
+height: 50px;
+background-image: repeating-linear-gradient(to bottom, orange 10% , white  20%, lightblue  30%, white 40%, orange 50%);
+margin-top: 16%;
+margin-left: 3%;
+}
+
+.securityLine::after{content: '911';
+    padding: 10px;
+    display: inline-block;
+    background-color: white;
+    margin-left: 100%;
+    margin-top: 2%;
+font-style: italic;}
+
+
+    </style>
+</head>
+<body>
+<div class="container">
+
+front
+ <div class="cardBody">
+
+<span class="logo"></span> 
+<span class="nfc"></span>
+
+<span class="chip"></span>  
+ <span class="hologram"></span>
+
+<p class="cardData cardNumber"> 1234 5678 9098 7654</p>
+<span class="text">valid <br> thru</span>
+<span class="cardData">04/22</span> 
+ <span class="visa"></span>
+<p class="cardData">FIRSTNAME LASTNAME</p>
+ </div>
+  
+
+ back
+ <div class="cardBody back">
+<span class="text">Служба поддержки клиентов/ For customer service call: 0 800 123 456 </span>
+
+<p class="text backText"> GEMALTO SHA U1234567 1234</p>
+
+<span class="hologramBack"></span>
+<span class="securityLine"></span>
+<SPAN class="text">AUTHORISED SIGNATURE/ ОБРАЗЕЦ ПОДПИСИ  
+    <br> NOT VALID UNLESS SIGNED/БЕЗ ПОДПИСИ НЕДЕЙСТВИТЕЛЬНА</SPAN>
+<p class="cardData cardNumber"> 1234 5678 9098 7654</p>
+<p class="cardData">04/22</p>
+    <p class="cardData">FIRSTNAME LASTNAME</p>
+ </div>  
+</div>
+</body>
+</html>
