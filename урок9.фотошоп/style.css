@@ -159,7 +159,7 @@ padding: 20% 0;
     display: inline-block;
 }
 
-.descr{font-size: 0.9vw; 
+.descr{font-size: 14px; 
     width: 80%;
     padding-top: 9px;
 clear: both;
@@ -173,7 +173,8 @@ display: block!important;}
 .oldprice {text-decoration: line-through;
 font-size: 1vw;
 float: left;
-padding-top: 4px;}
+padding-top: 4px;
+margin-right: 5px!important;}
 
 .bask {background-color: #7db122;
     border-radius: 50px;
@@ -263,14 +264,14 @@ position: relative;}
         height: 480px;
         margin: 5%;
         font-size: 1.5vw;
-        padding-bottom: 5%;
+        padding-bottom: 12%;
      
     }
     
     .aside div {margin: 25px 0}
     
     .check {position: relative;
-        top: 70%;
+        top: 65%;
         width: 63%;
         height: 11%;
         background-color: #4cb1ca;
