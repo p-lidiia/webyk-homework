@@ -1,0 +1,406 @@
+.container{width: 100%;
+    font-family: 'Open Sans', 'Adobe Invis Font', 'Myriad Pro Regular';
+padding: 0;}
+
+.blue {color:#bef2ff}
+
+.headerBlue {background-color: #4cb1ca;
+color: white;
+font-size: 12px;
+padding: 10px 0 10px 9%;
+margin: 0;
+}
+
+a:link,  a:visited,  a:active {text-decoration: none; color: inherit;}
+
+.setting:first-child{margin-left: 10%;}
+
+.setting {padding-right: 2%;}
+
+.links a, .links li{
+text-decoration: none;
+color: white;
+text-align: center;
+padding: 0 5px;}
+
+.links, .types {
+    float: right;
+column-count: 5;
+column-rule: white 1px solid;
+list-style: none;
+margin: 0;}
+
+
+h2 {text-transform: uppercase;
+display: inline-block;
+color: #656565;
+margin-left: 4%;
+font-size: 36px;
+font-weight:700;
+padding: 25px 0;
+width: fit-content !important; }
+
+.types{text-transform: uppercase;
+font-size: 12px;
+padding: 0 3%;
+}
+
+.types a, .types li {text-decoration: none;
+    text-align: center;
+    padding: 60% 0px;
+font-weight: 700;
+color: #656565;}
+
+.headerPic{background-image: url("img/back.png");
+display: flex;
+background-size: cover;
+box-sizing: content-box;
+padding-bottom: 16px;
+}
+
+.button {background-image: url("img/Ellipse\ 2@1X.png");
+width: 67px;
+height: 67px;
+background-repeat: no-repeat;
+margin: 14% 3%;}
+
+.leftBut {margin-left: 8%;}
+
+.rightBut {margin-left: 17%;}
+
+.headerText {width: 54%;
+padding-top: 14%;
+font-size: 21px;
+height: fit-content;
+display: block!important;}
+
+.thinText{font-weight: 100;
+font-size: 30px;}
+
+.thickText{font-weight: 600;
+font-size: 27px;}
+
+.button img{margin: 0 auto;
+display: block;
+padding: 28% 0;}
+
+.headerP{background-color:rgba(0, 0, 0, 0.5);
+width: fit-content;
+text-transform: uppercase;
+padding: 5px 15px;
+color: white;
+margin: 1% 0;}
+
+.headerWhite{
+    align-items:center;
+    margin: 0 7%;
+}
+
+.headerWhite div {padding-bottom: 10px;
+padding-top: 10px;}
+
+.headerWhite img {display: inline-block;
+background-image: url('img/Ellipse\ 1@1X\ \(1\).png');
+padding: 10px 8px;
+background-repeat: no-repeat;}
+
+.searchInput{    width: 175px;
+    border: 3px solid #d6d6d6;
+    outline: none;
+    padding-left: 7px;
+color: #d6d6d6;
+background-image: url("img/search-solid.svg");
+background-repeat: no-repeat;
+background-size: 8%;
+    background-position: 150px 5px;}
+
+.searchInput::-webkit-input-placeholder {color: #d6d6d6;}
+
+.searchForm {margin-left: 4%;
+padding: 0;
+}
+
+main {display: flex;
+padding: 0 8%;}
+
+.shopping {text-transform: uppercase;
+    font-weight: 800;
+    font-size: 16px;
+    width: fit-content;
+}
+
+.catalog {
+    display: inline-flex;
+    flex-wrap: wrap;
+}
+
+.goods {    background-color: #fff;
+    box-shadow: 0px 0px 3px 2px #eeeeee;
+    margin: 1% 3% 2% 1%;
+    padding: 7px;
+    width: 26%;
+    height: 320px;}
+
+ 
+.box{
+    background-color:#eff1f0 ;
+max-height: 195px;
+min-height: 180px;
+position: relative;}
+
+.box img {width: 100%;
+mix-blend-mode: multiply;
+padding: 20% 0;
+}
+
+.box img:hover, .shopping img:hover, .bask:hover, button:hover {filter: opacity(0.5);}
+
+.goods p {margin: 0;
+    display: inline-block;
+}
+
+.descr{font-size: 0.9vw; 
+    width: 80%;
+    padding-top: 9px;
+clear: both;
+display: block!important;}
+
+.price {font-size: 23px;
+    color:#7db122;
+    display: inline-block;
+}
+
+.oldprice {text-decoration: line-through;
+font-size: 1vw;
+float: left;
+padding-top: 4px;}
+
+.bask {background-color: #7db122;
+    border-radius: 50px;
+    background-image: url(img/basket.png);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: 54%;
+    width: 22%;
+    height: 15%;
+    float: right;}
+  
+/* .bask{ background-image: url("img/Ellipse\ 1@1X\ \(1\).png");
+    background-repeat: no-repeat;
+    background-size: 75%;
+float: right;
+width: 30%;}
+
+.bask img {padding: 10%;
+width: 78%;
+float: left;
+position: relative;}
+ */
+
+ .newStripe {
+    background-image: url(img/labelBlue.png);
+    background-repeat: no-repeat;
+    position: absolute;
+    z-index: 999;
+    margin-block-start: -4.5%;
+    width: 46%;
+    margin-left: 58%;
+    height: 55%;
+ }
+
+ .newStripe::before{
+    content: 'NEW';
+    color: white;
+    transform: rotate(45deg);
+    position: absolute;
+    margin: 20% 40%;
+ }
+
+ .saleStripe {
+    background-image: url(img/labelGreen.png);
+    background-repeat: no-repeat;
+    position: absolute;
+    z-index: 999;
+    margin-block-start: -4.5%;
+    width: 55%;
+    margin-left: -5%;
+    height: 55%;
+ }
+
+ .saleStripe::before{
+    content: 'SALE';
+    color: white;
+    transform: rotate(315deg);
+    position: absolute;
+    margin: 20% 20%;
+ }
+
+.category {    
+    text-transform: uppercase;
+    padding-top: 35px;
+    font-size: 22px;
+    font-weight: 600;
+    margin-bottom: 5px;
+}
+
+    .asideCol{
+    margin: 3% 2%;
+    }
+
+    .aside {
+        float: right;
+        text-align: center;
+        text-transform: uppercase;
+        border-top: 3px solid #4cb1ca;
+        margin: 3% 13% 0 0%;   
+       }
+    
+    .asideShadow {box-shadow:  0px 3px 2px #eeeeee;}
+    
+    .asidePic {background-image: url("img/side.png");
+        background-position: 51% -37%;
+        background-repeat: no-repeat;
+        height: 480px;
+        margin: 5%;
+        font-size: 1.5vw;
+        padding-bottom: 5%;
+     
+    }
+    
+    .aside div {margin: 25px 0}
+    
+    .check {position: relative;
+        top: 70%;
+        width: 63%;
+        height: 11%;
+        background-color: #4cb1ca;
+        border: none;
+        border-radius: 0;
+        font-size: 16px;}
+    
+    .asideBox {box-shadow: 0px 0px 3px 2px #eeeeee}
+    
+    .asideBox img {margin:6% 2%}
+    
+    .asideBox img:hover {filter: hue-rotate(140deg);}
+    
+    .newSet { font-size: 1.5vw;
+    float: right;
+padding: 5px 10px;
+border-top: 3px solid #4cb1ca;}
+    
+    .newSet input {    width: 90%;
+        height: 32px;
+        outline: none;
+        border: 1px solid #e2e2e2;
+        margin: 10px auto;
+    }
+    
+    .newSet button {border: none;
+    outline: none;
+    color: white;
+    background-color: #7eb123;
+font-size: 16px;
+padding: 10px 15px;}
+
+.order {background-color: #4cb1ca;
+padding: 0 8%;
+text-transform: uppercase;}
+
+.order div {background-image: url("img/Ellipse\ 2@1X.png");
+    background-repeat: no-repeat;
+    background-position: center left;
+    height: 140px;
+    line-height: 140px;
+    background-size: 12%;
+    }
+
+.order img {margin: 2px;
+padding: 8px;}
+
+.truck {margin-left: -2px!important;}
+
+.orderText {padding-left: 40px;}
+
+.social{background-color: #39a0b9;
+padding:4% 10% ;
+padding-bottom: 2%;}
+
+.social p {margin-block-end: 2px;}
+
+.social div {margin-bottom: 25px;}
+
+.about{background-color: #0b4b5a;
+color: #8adcf0;}
+
+footer{width: 100%; color: white;
+line-height: 2;}
+
+footer h3 {text-transform: uppercase;
+padding-bottom: 10px;
+font-size: 26px;
+width: fit-content;
+text-align: left;}
+
+.footerLine {width: 100%;
+color: white;
+height: 1px;
+margin: 5px 0;}
+
+.about {font-size: 13px;
+padding: 24px 0;}
+
+.copy{padding-left: 9%;}
+
+.aboutUs {
+        float: left;
+    column-count: 4;
+    column-rule: #8adcf0 1px solid;
+    padding-inline-start: 0;
+    margin: 0;}
+
+ .aboutUs li{
+    text-decoration: none;
+    list-style: none;
+    color: #8adcf0;
+    text-align: center;
+    padding: 0 5px;}
+   
+    .info ul, .twitter ul {list-style: none;
+    padding-inline-start: 0;}
+
+    .twitter ul {margin-left: 60px;}
+
+    .twitter ul li::before {
+        content: url(img/twitter.png);
+        background-color: white;
+        border-radius: 50px;
+        padding: 10px 5px 0px 12px;
+        margin-right: 10px;
+        margin-left: -60px;
+        width: 43px;
+        height: 43px;
+        display: inline-block;}
+
+    .twitter img {background: white;
+    border-radius: 50px;
+padding: 15px;}
+
+    .fas {font-size: 10px;
+    padding-right: 5px;}
+
+    .facesBoth {display: flex;
+        justify-content: space-between;
+    margin-bottom: 5px;}
+
+    .facesBoth img {width: 23%;}
+
+    .socialMedia img {margin: 0 auto;
+    display: block;
+    padding: 84% 0;}
+
+    .socialImg {width: 36px;height: 36px;background-color: white;
+    border-radius: 50px;
+margin: 2%;}
+
+.twitter ul li::first-line {padding: 0;}
