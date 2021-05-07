@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Validation</title>
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+<link href="https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <main>
+        <div class="task1">
+            <h1>Регистрация на трудоустройство</h1>
+        <form action="" method="GET">
+            Ваше имя
+            <input type="text" placeholder="Василиса" required minlength="2" name="name"> 
+            Ваш номер телефона
+            <input type="tel" placeholder="380-000-000-00" required pattern="[0-9]{12}" minlength="12" name="phone">
+            Ваш e-mail
+            <input type="email" placeholder="email@gmail.com" required name="email">
+
+            <p>Ваш пол:</p>
+            <div>
+              <input type="radio" id="genderF"
+               name="gender" value="женский">
+              <label for="genderF">женский</label>
+          
+              <input type="radio" id="genderM"
+               name="gender" value="мужской">
+              <label for="genderM">мужской</label>
+            </div>
+
+Ваш город проживания
+            <input type="text" placeholder="Выберите город" name="city" list="city" />
+            <datalist id="city">
+                <option value="Киев"> </option>
+                <option value="Днепр"></option>
+                <option value="Харьков"></option>
+                <option value="Одесса"></option>
+                <option value="Львов"></option>
+                <option value="Запорожье"> </option>
+                <option value="Винница"></option>
+                <option value="Чернигов"></option>
+                <option value="Ивано-Франковск"></option>
+                <option value="Полтава"></option>
+                <option value="Херсон"></option> 
+            </datalist>
+            
+Ваш логин
+            <input type="text" placeholder="Логин" required name="login">
+Ваш пароль
+            <input type="password" placeholder="Пароль, не короче 8 символов" required minlength="8" name="password">
+        
+            <input type="submit">Зарегистрироваться</button>
+        </form>
+</div>
+
+
+<div class="task2">
+    <h1>Анкета</h1>
+    <form action="" method="get">
+Как я могу к вам обращаться?
+        <input type="text"name="name2" placeholder="Имя моего нового друга" required> 
+По какому номеру я могу связаться с вами?
+        <input type="tel"name="phone2" placeholder="Контактный номер"  pattern="[0-9]{12}" minlength="12" required>
+От 1 до 10, насколько сильно вы хотите работать программистом?
+        <input type="range"name="wishToWork" min="1" max="10" required>
+Что вы используете для обучения?
+<div class="check">
+        <input type="checkbox"name="source" id="YouTube" value="видосики">  <label for="YouTube">видосики))</label>
+        <input type="checkbox"name="source" id="books" value="книги и статьи"> <label for="books">книги и статьи</label>
+        <input type="checkbox"name="source" id="apps" value="обучающие приложения"> <label for="apps">обучающие приложения</label>
+        <br>
+        <input type="checkbox"name="source" id="school" value="курсы"> <label for="school">курсы</label>
+        <input type="checkbox"name="source" id="stackOverflow" value="подглядываю у других"> <label for="stackOverflow">подглядываю у других</label>
+</div>
+        Какими языками программирования вы уже владеете?
+        <input type="text"name="skills" required>
+Придумайте секретное слово на латинице для восстановления пароля и доступу к настройкам безопасности
+        <input type="password"name="secretWord" placeholder="только не забудьте его!" pattern="^[a-zA-Z]+$" required>
+Сколько лет вы интересуетесь программированием?
+        <input type="number"name="" min="1" max="99" required>
+
+        <input type="submit" name="submit" id="submit">
+
+    </form>
+</div>
+        
+    </main>
+    
+</body>
+</html>

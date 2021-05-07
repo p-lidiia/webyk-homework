@@ -1,0 +1,40 @@
+body{
+    font-family: 'Raleway', sans-serif;
+}
+
+main{width: 700px;
+margin: 0 auto;
+background-color: bisque;
+padding: 10px;
+text-align: center;}
+
+input{display: block;
+outline: none;
+padding: 10px;
+font-family: 'Raleway', sans-serif;
+margin: 10px auto;
+width: 200px;}
+
+h1 {text-align: center;}
+
+form {border: 1px white solid;
+padding: 10px;}
+
+.task1 input:valid {box-shadow: 0px 0px 5px 0px green;}
+
+.task1 input:invalid {box-shadow: 0px 0px 5px 0px red;}
+
+button {font-family: 'Raleway', sans-serif;}
+
+input[type="radio"] {display: inline-block;
+    margin-bottom: 20px;
+    width: fit-content;
+}
+
+input[type="radio"]:valid, input[type="radio"]:invalid, input[type="submit"]:valid, input[type="submit"]:invalid
+ {box-shadow: none!important;}
+
+input[type="checkbox"] {margin-left: 15px;
+display: inline-block; width: fit-content;}
+
+
