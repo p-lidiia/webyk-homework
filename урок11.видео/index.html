@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Video</title>
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Comfortaa:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <main>
+        <h1>Библиотека медиа направлений</h1>
+<div class="taskAudio"> <!--в формате ogg добавила не все, потому что бесплатный лимит конвертирования был превышен))-->
+  <div class="song"> <p class="genre">Электронная музыка</p>
+ <p> <span class="artist">Gorillaz</span><span class="songName">Feel Good Inc</span>  </p>
+  <audio src="audio/1.electro.mp3" controls>
+<source src="audio/" type="audio/ogg"> </audio> </div>
+
+   <div class="song"><p class="genre">Поп</p>
+  <p> <span class="artist">DaBro</span><span class="songName">Юность</span>  </p>
+   <audio src="audio/2.pop.mp3" controls>
+<source src="audio/" type="audio/ogg"></audio> </div>
+
+  <div class="song"><p class="genre">Клубная музыка</p>
+  <p><span class="artist">Martin Garrix</span><span class="songName">Animals</span>  </p>
+   <audio src="audio/3.club.mp3" controls>
+<source src="audio/" type="audio/ogg"></audio> </div>
+
+  <div class="song"> <p class="genre">Рэп</p>
+ <p> <span class="artist">T-Fest & Скриптонит</span><span class="songName">Ламбада</span>  </p>
+  <audio src="audio/4.rap.mp3" controls>
+<source src="audio/" type="audio/ogg"></audio> </div>
+
+  <div class="song"> <p class="genre">Рок</p>
+ <p> <span class="artist">Король и Шут</span><span class="songName">Кукла колдуна</span> </p>
+   <audio src="audio/5.rock.mp3" controls>
+<source src="audio/5.rock.ogg" type="audio/ogg"></audio> </div>
+
+  <div class="song"> <p class="genre">Релакс</p>
+ <p> <span class="artist">Enigma</span><span class="songName">Deja Vu</span>  </p>
+  <audio src="audio/6.relax.mp3" controls>
+<source src="audio/" type="audio/ogg"></audio> </div>
+
+  <div class="song"><p class="genre">Дабстеп</p>
+ <p> <span class="artist">Skrillex feat. Sirah</span><span class="songName">Bangarang</span> </p>
+    <audio src="audio/7.dubstep.mp3" controls>
+    <source src="audio/7.dubstep.ogg" type="audio/ogg"></audio> </div>
+
+  <div class="song"> <p class="genre">Металл</p>
+ <p> <span class="artist">Slipknot</span><span class="songName">Psychosocial</span> </p>
+   <audio src="audio/8.metal.mp3" controls>
+<source src="audio/8.metal.ogg" type="audio/ogg"></audio> </div>
+
+  <div class="song"> <p class="genre">Классическая музыка</p>
+  <p><span class="artist">Ludvig Van Beethoven</span><span class="songName">Fur Elise</span></p>
+   <audio src="audio/9.classic.mp3" controls>
+<source src="audio/9.classic.ogg" type="audio/ogg"></audio> </div>
+
+  <div class="song"> <p class="genre">Джаз</p>
+  <p><span class="artist">Louis Armstrong</span><span class="songName">What a Wonderful World</span> </p>
+  <audio src="audio/10.jazz.mp3" controls>
+<source src="audio/10.jazz.ogg" type="audio/ogg"></audio> </div>
+
+  <div class="song"> <p class="genre">Инди</p>
+  <p><span class="artist">Alice Merton</span><span class="songName">No Roots</span> </p>
+  <audio src="audio/11.indie.mp3" controls>
+<source src="audio/11.indie.ogg" type="audio/ogg"></audio> </div>
+
+  <div class="song"> <p class="genre">Акустическая музыка</p>
+ <p> <span class="artist">James  Arthur</span><span class="songName">Impossible</span> </p>
+  <audio src="audio/12.acoustic.mp3" controls>
+<source src="audio/12.acoustic.ogg" type="audio/ogg"></audio> </div>
+
+
+</div>
+
+    <div class="taskVideo">
+        <!--в заданиях после видео написано 300*200 размер видео, но и адаптивные. Потому из размер оставляю как указано а адаптивность в отображении
+        на странице относительно друг друга. Надеюсь, я поняла задание верно-->
+
+        <iframe width="300" height="200" src="https://www.youtube.com/embed/1nX0kF2UwDc" title="YouTube video player" frameborder="0" 
+        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+
+
+        <iframe src="https://player.vimeo.com/video/529378408" width="300" height="200"
+         frameborder="0" allow="autoplay; fullscreen; picture-in-picture" allowfullscreen></iframe>
+
+
+     <video src="video/light.mp4" controls width="300px"; height="200px">
+        <source src="video/light.ogv" type="video/ogg">
+    </video>
+     <!--opera
+    При проверке Опера открыла мп4 видео тоже нормально-->
+     <video src="video/nebula.mp4" controls width="300" height="200">
+    <source src="video/nebula.ogv" type="video/ogg">
+    </video>
+
+    </div>
+</main>
+</body>
+</html>

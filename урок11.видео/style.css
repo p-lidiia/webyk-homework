@@ -1,0 +1,70 @@
+main {width: 100%;
+margin: 0;
+font-family: 'Comfortaa', cursive;
+font-weight: 300;}
+
+audio {  
+    background-color: royalblue;
+    border: darkblue 1px solid;
+    padding: 5% 1%;
+    width: 80%;
+    display: block;
+    margin-bottom: 10%;
+}
+
+video, iframe{
+    object-fit: cover;
+}
+
+h1 {text-align: center;}
+
+.taskAudio {display: grid;
+    width: 100%;
+grid-template-columns:  1fr 1fr 1fr 1fr;
+column-gap: 10px;
+row-gap: 10px;}
+
+.song {
+background-image:radial-gradient(ellipse at top, #36008d70, transparent),
+radial-gradient(ellipse at bottom, rgb(240, 198, 240), transparent);
+padding: 10px;
+display: grid;
+grid-template-rows: 30% 25% 45%;
+}
+
+
+.songName {font-size: 13px;
+}
+
+.genre {margin: 0 0 10px 0;
+    padding: 10px;
+    border: royalblue 1px solid;
+height: fit-content;}
+
+.genre::before{
+    content: 'Жанр: ';
+    font-weight: 700;
+}
+.artist::after{
+    content: ' - ';
+}
+
+.taskVideo video, .taskVideo iframe{
+    margin: 5% 0.5%;
+}
+
+.taskVideo {margin-bottom: 15px; display: flex;
+justify-content: space-around;
+flex-wrap: wrap;}
+
+@media  screen and (min-width: 300px) and (max-width: 820px) {
+    .taskAudio{
+        grid-template-columns: 1fr 1fr;
+    }
+    .song {
+    display: inline-block;}
+
+    }
+
+
+    
