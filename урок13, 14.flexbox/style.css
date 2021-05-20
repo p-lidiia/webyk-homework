@@ -1,0 +1,125 @@
+body{
+    font-family: 'Josefin Sans', sans-serif;
+}
+
+div{
+    padding: 10px;
+}
+
+/*знакомство с flexbox*/
+
+.flexbox{display: flex;
+flex-direction: column;
+background-image: linear-gradient(to left, royalblue, transparent), linear-gradient(45deg, coral, transparent);}
+
+.flexbox div {
+margin: 5px;}
+
+.header {display: flex;
+flex-direction: row;
+justify-content: space-around;}
+
+.block{
+background-color: rgba(255, 255, 255, 0.5);
+
+}
+h1{
+    margin: 0 auto;
+    width: fit-content;
+    padding: 5px 20px;
+    border-bottom-color: inherit;
+    border-bottom-width: 5px;
+    border-bottom-style: solid;
+}
+
+.main {display: flex;
+flex-direction: row;
+height: 350px;
+justify-content: center;
+align-items: center;}
+
+.main div {
+    margin: 10px;
+    width: 19%;
+}
+
+.mainCenter {
+    background-image: url('https://images.squarespace-cdn.com/content/v1/5cf6959864dfad0001763314/1568639447009-CMBXADMBRXAIKHRR3HEC/ke17ZwdGBToddI8pDm48kN5c1n4RBBAOqxzYpnHn1xcUqsxRUqqbr1mOJYKfIPR7LoDQ9mXPOjoJoqy81S2I8PaoYXhp6HxIwZIk7-Mi3Tsic-L2IOPH3Dwrhl-Ne3Z23AmdCQYQkin7TktvIEDf1lH1CBs2FMR3chsZKIDTkW-kL3r1G49e-3ZnDLNRdB_t/The+Minimalist+Art+Movement+article.+Image+of+Marble+Phases+of+the+Moon+poster.jpg');
+    width: 100%;
+    height: 100%;
+    background-position: center;
+    background-size: contain;
+    background-repeat: no-repeat;
+    mix-blend-mode: multiply;
+}
+
+.footer {display: flex;
+flex-direction: column;}
+
+.footerLinks {list-style-type: none;
+justify-content: space-around;
+display: flex;}
+
+.footerLinks li {display: inline-block;}
+
+ a:active, a:visited, a:link {color: inherit; 
+text-decoration: none;}
+
+.footerCopy {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+/* урок по выравниванию */
+.lesson14 {background-color: black;
+color: white;
+margin: 10px 0;}
+
+.flexUp {display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    height: 300px;
+    align-items: center;
+}
+
+.flexUp div {
+background-color: rgb(112, 110, 110);
+text-align: center;
+padding:  20px;}
+
+.flexOrder {display: flex;
+flex-direction: row-reverse;
+flex-wrap: wrap;
+justify-content: space-evenly;}
+
+.flexOrder div {
+    background-color: plum;
+    margin: 10px;
+}
+
+/**/
+
+.box {display: flex;
+justify-content: center;
+height: 350px;}
+
+.box div {background-color: chocolate;
+margin: 10px;
+min-width: 100px;
+border: 10px solid rgb(255, 207, 86);
+display: flex;
+align-items: center;
+justify-content: center;}
+
+.boxInner {display: flex;
+align-items: center;}
+
+.boxInner div {background-color: darkcyan;
+margin: 10px;
+min-height: 40px;
+text-align: center;
+display: flex;
+align-items: center;
+justify-content: center;}
+
+/**/

@@ -1,0 +1,70 @@
+.task1{
+    display: flex;
+    flex-direction: column;
+}
+
+.flex1, .flex2, .flex3 {
+    display: flex;
+    flex-direction: row;
+}
+
+.block {
+    width: 50px;
+    background-color:  yellow;
+    margin: 10px;
+}
+
+.flex2 {justify-content: center;}
+
+.flex3 {justify-content: flex-end;}
+
+.task2{
+   display: grid;
+    height: 400px;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 1fr 1fr 1fr;
+}
+
+.first, .second, .third {display: flex; 
+}
+.first{
+    background-color: rgba(15, 221, 43, 0.5) ;
+    flex-direction: column;
+    grid-row: 1/4;
+    grid-column: 1;
+}
+
+.second{
+    background-color:rgba(221, 84, 157, 0.5) ;
+    grid-row: 2;
+    grid-column: 2;
+    margin-left: 50px;
+    margin-bottom: 50px;
+}
+
+.third{
+    background-color: rgba(52, 124, 251, 0.5);
+    grid-column: 1/4;
+    grid-row: 3;
+}
+
+.task3{
+    display: flex;
+}
+
+.task3 div {
+    margin: 10px;
+    background-color: aquamarine;
+flex-grow: 1;
+flex-shrink: 2;
+flex-basis:  100px;
+}
+
+.task3 div:nth-of-type(even) {
+    flex-grow: 3;
+}
+
+.stable {
+    flex-shrink: 0;
+min-width: 150px;
+}
