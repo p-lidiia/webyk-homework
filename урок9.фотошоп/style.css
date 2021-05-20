@@ -140,10 +140,10 @@ padding: 0 8%;}
     margin: 1% 3% 2% 1%;
     padding: 7px;
     width: 26%;
-
 display: grid;
 grid-template-columns: 75% 25%;
-grid-template-rows: 70% 15% 15%;}
+grid-template-rows: 70% 15% 15%;
+grid-template-rows: 70%, minmax(50px, 100px);}
  
 .box{
     background-color:#eff1f0 ;
@@ -176,6 +176,7 @@ margin-bottom: 10px!important;}
 
 .price {font-size: 23px;
     color:#7db122;
+    grid-column: 1;
     display: inline-block;
    
 }
@@ -187,7 +188,6 @@ margin-bottom: 10px!important;}
 }
 
 .oldprice {text-decoration: line-through;
-font-size: 1vw;
 float: left;
 padding-top: 4px;
 margin-right: 5px!important;
@@ -227,9 +227,10 @@ position: relative;}
     position: absolute;
     z-index: 999;
     margin-block-start: -4.5%;
-    width: 46%;
-    margin-left: 58%;
+    width: 55%;
+    margin-left: 50%;
     height: 55%;
+    background-size: 100%;
  }
 
  .newStripe::before{
@@ -243,6 +244,7 @@ position: relative;}
  .saleStripe {
     background-image: url(img/labelGreen.png);
     background-repeat: no-repeat;
+    background-size: 100%;
     position: absolute;
     z-index: 999;
     margin-block-start: -4.5%;
@@ -256,7 +258,7 @@ position: relative;}
     color: white;
     transform: rotate(315deg);
     position: absolute;
-    margin: 20% 15%;
+    margin: 20% 25%;
  }
 
 .category {    
@@ -428,3 +430,30 @@ padding: 15px;}
 margin: 2%;}
 
 .twitter ul li::first-line {padding: 0;}
+
+@media screen and (max-width:1200px) {
+    .check{
+        height: 14%;
+    }
+
+    .goods{
+        grid-template-rows: 50% 30% 20%
+    }
+
+    .bask {width: 35px;
+    height: 35px;
+grid-row: 3;}
+
+.price {
+    font-size: 13px;
+}
+
+.newStripe::before, .saleStripe::before {
+    font-size:1.5vw ;
+}
+
+.saleStripe::before {
+    margin: 15% 15%;;
+}
+
+}

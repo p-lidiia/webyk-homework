@@ -1,0 +1,36 @@
+.container{
+    width: 80%;
+    margin: 0 auto;
+    background-image: linear-gradient(to left, transparent , royalblue, royalblue, transparent);
+    text-align: center;
+    padding: 30px;
+    font-family: 'Pacifico', cursive;
+    color: white;
+    font-size: 30px;
+}
+
+a:link, a:active, a:visited {
+    text-decoration: none;
+    color: inherit;
+}
+
+input {
+    font-family: 'Pacifico', cursive;
+       border: none;
+    outline: none;
+    background-color: white;
+    color: royalblue;
+    font-size: 19px;
+    display: block;
+    margin: 20px auto;
+    padding: 10px;
+}
+
+input[type="submit"]:hover {
+    background-color: royalblue;
+    color: white;
+}
+
+form{
+    margin-bottom: 90px;
+}
