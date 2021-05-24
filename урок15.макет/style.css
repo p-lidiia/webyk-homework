@@ -799,8 +799,13 @@ padding: 0 10px;}
     font-size: 40px;
 }
 
+.featuresList{
+    margin: 3% 4%;
+}
+
 .feature p {
     font-size:12px ;
+    padding-bottom: 0;
 }
 
 .projectName {
@@ -817,9 +822,6 @@ padding: 0 10px;}
 
 .headerPages {width: 13%;}
 
-.featuresList {
-    margin: 3% 10%;
-}
 
 .wpWaxom {
     font-size: 18px;
@@ -834,11 +836,42 @@ padding: 0 10px;}
     margin: 2% auto;
 }
 
+.projectCategory{
+    width: 85%;
+}
+.mobileDevices {width:100% ;
+    background-image: url(img/mobile.png);
+    background-repeat: no-repeat;
+    background-size: 31%;
+    background-position: right;
+justify-content: left;}
+
+
 .mobileDevices img {
-    filter: blur(3px) opacity(0.5)
+   display: none;
+}
+
+.mobileDescr {width: 67%;
+    margin-left: 5%;
+}
+.results{
+    width: 95%;
+}
+
+.number{
+    font-size: 25px;
+}
+
+.postsFlex{
+    width: 85%;
+}
+
+.ourClients img {
+    width: 40%;
+    margin: 2%;
 }
     footer {
-        padding: 5% 10%
+        padding: 5% 4%
     }
 
     footer h2 {margin-block-start: 0;}

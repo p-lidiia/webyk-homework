@@ -1,0 +1,90 @@
+body{
+    font-size: 2vw;
+}
+
+.gallery{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 90%;
+    margin: 0 auto;
+}
+
+.gallery img {border: 5px solid purple;
+    padding: 5px; margin: 5px;
+width: 10%;
+height: 100%;
+}
+
+.textBlocks{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.textBlocks div {
+    background-color: black;
+    color: white;
+    padding: 10px;
+    width: 26%;
+ 
+    margin: 10px;
+}
+
+/*l*/
+@media  screen and (max-width:1200px) and (min-width:992px) {
+    .gallery img {border: 5px solid green;
+        padding: 5px;
+    width: 10%;}
+
+    .textBlocks div {
+        background-color: yellow;
+        color: red;
+
+    }
+}
+/*m*/
+@media screen and (max-width: 992px) and (min-width:768px) {
+    .gallery img {border: 5px solid red;
+        width: 42%;}
+
+        .gallery {flex-wrap: wrap;
+              justify-content: space-around;
+            align-items: flex-start;
+           }
+
+        .gallery img:nth-child(2n) {display: none;}
+
+        .textBlocks div {
+            background-color: pink;
+            color: black;
+            
+        }
+}
+/*s*/
+@media screen and (max-width: 768px) and (min-width: 576px) {
+    .gallery{flex-wrap: wrap;}
+
+    .gallery img {border: 5px solid black;
+        width: 30%;}
+
+        .textBlocks div {
+            background-color: chocolate;
+            color: orange;
+        }
+}
+/*xs*/
+@media screen and (max-width: 576px) {
+    .gallery{flex-wrap: wrap;}
+
+    .gallery img {border: 5px solid blue;
+        width: 80%;}
+
+        .textBlocks {flex-direction: column-reverse;}
+
+        .textBlocks div {
+            background-color: grey;
+            color: silver;
+            width: 90%;
+        }
+}
