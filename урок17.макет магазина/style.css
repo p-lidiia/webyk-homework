@@ -1,0 +1,418 @@
+body {
+    font-family: 'Bebas Neue', cursive;
+    color: white;
+  
+}
+
+a:link, a:visited, a:active {
+    color: inherit;
+    text-decoration: inherit;
+}
+
+.headerLogo {
+    display: flex;
+    justify-content: space-evenly;
+    color: #a1a1a1;
+    align-items: center;
+    padding: 10px 0;
+}
+
+.headerLogo div:nth-of-type(2) {
+    width: 50%;
+}
+
+.headerLogo span {
+    font-size: 27px;
+}
+
+form {
+    padding-left: 15%;
+}
+
+.headerLogo input {
+    width: 70%;
+    border: 1px solid lightgrey;
+    outline: none;
+    background-image: url(img/search.png);
+    background-repeat: no-repeat;
+    background-position: 99% center;
+    padding: 8px;
+}
+
+.headerLogo div:last-child{
+    display: flex;
+    align-items: center;
+    width: 7%;
+    justify-content: space-around;
+
+}
+
+.headerNav {
+    background-color: #4ccfc1;
+    font-size: 20px;
+}
+
+.headerNav ul {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 0;
+    padding-inline-start: 0;
+}
+
+.headerNav ul li {
+    display: inline-block;
+    margin: 0.5% 0;
+    padding: 0 2%;
+    border-right: 2px solid white;
+}
+
+.headerNav li:last-child {
+    border-right: none;
+}
+
+.mainBig {
+    display: flex;
+    background-color: #3dc8b5;
+    justify-content: center;
+    padding: 4% 25%;
+    padding-bottom: 0;
+    align-items: center;
+}
+
+.mainBig div:first-child {
+padding: 0 2%;
+}
+    
+.cowhide {
+    padding-left: 3%;
+    width: 62%;
+}
+
+.mainBig h1 {
+    font-size: 61px;
+    width: 75%;
+    margin: 0;
+    line-height: 1;
+    font-weight: 400;
+}
+
+.mainBig button {
+    text-transform: uppercase;
+    background-color: transparent;
+    color: white;
+    border: white solid 3px;
+    border-radius: 8px;
+    padding: 2px 26px;
+    font-family: 'Bebas Neue', cursive;
+    font-size: 27px;
+}
+
+.mainBig p{
+    font-family: 'Open Sans', sans-serif;
+    width: 85%;
+    line-height: 2;
+}
+
+.pages {
+    display: flex;
+    background-color: #3dc8b5;
+    justify-content: center;
+}
+
+.page {
+    width: 9px;
+    height: 9px;
+    border-radius: 50px;
+    background-color: white;
+    margin:  30px 7px;
+    display: inline-block;
+}
+
+.page:hover {
+    background-color: #7fd8cd;
+}
+
+.mainBranded {
+    display: flex;
+    align-items: center;
+    width: 97%;
+    margin: 0 auto;
+    justify-content: space-between;
+}
+
+.brandedCategory{
+    display: flex;
+    width: 30%;
+    align-items: center;
+    justify-content: center;
+    border-right:   1px lightgrey solid;
+    padding: 2%;
+}
+
+.brandedGallery div:last-child{
+    border: none;
+}
+
+.brandedCategory div {
+margin: 0 4%;
+}
+
+.brandedCategory img {
+    width: 100%;
+}
+
+.brandedGallery {
+    display: flex;
+    width: 80%;
+    justify-content: space-between;
+}
+
+.typeBut {
+    display: flex;
+    flex-direction: column;
+    font-size: 27px;
+    width: 25%;
+}
+
+.typeBut button {
+    margin-top: 20%;
+}
+
+.typeBut button, .buyNow {
+    border: none;
+    outline: none;
+    color: white;
+    background-color: #3cc395;
+    border-radius: 3px;
+    padding: 5px 10px;
+    font-family: 'Bebas Neue', cursive;
+    font-size: 20px;
+}
+
+.buyNow {
+    display: inline-block;
+    
+}
+
+.typeBut p {
+    color: #afafaf;
+    line-height: 1;
+    margin: 0;
+}
+
+.mainProducts h2 {
+    text-transform: uppercase;
+    margin: 0;
+    font-weight: 400;
+    padding: 10px 20%;
+    background-color: #3dc3b5;
+}
+
+.productsGallery {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    width: 70%;
+    margin: 0 auto;
+    padding-bottom: 3%;
+}
+
+.product {
+    display: flex;
+    flex-direction: column;
+    border: 1px solid lightgray;
+    border-bottom: #3cc395 5px solid;
+    width: 20%;
+    padding: 2% 3%;
+    margin: 2%;
+}
+
+.product img {
+    height: 120px;
+    width: fit-content;
+    margin: 0 auto;
+}
+
+.product div {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.product h4 {
+    color: #afafaf;
+    text-align: center;
+    margin: 10px;
+    font-size: 24px;
+    font-weight: 400;
+}
+
+.price {
+    color: #afafaf;
+    font-size: 22px;
+}
+
+.footerCategories {
+    display: flex;
+    background-color: #3cc3b5;
+    justify-content: space-evenly;
+}
+
+.footerCategories ul {
+    list-style-type: none;
+    padding: 0;
+    font-family: 'Open Sans', sans-serif;
+    line-height: 2;
+    font-size: 16px;
+}
+
+.footerCategories h3 {
+    font-weight: 400;
+    font-size: 25px;
+}
+
+.footerCopyright {
+    background-color: #2da89b;
+    text-align: center;
+    font-family: 'Open Sans', sans-serif;
+    padding: 10px 0;
+    font-size: 16px;
+}
+
+@media screen and (max-width:1200px)  {
+    .mainBig {
+        padding: 4% 10%;
+    }
+    .headerLogo div:last-child {
+width: 11%;
+}
+}
+
+
+@media screen and (max-width:1040px)  {
+  
+.headerNav ul li {
+    font-size: 13px;
+}
+
+.brandedCategory p{
+    font-size: 17px;
+}
+
+.productsGallery {
+    width: 97%;
+}
+
+}
+
+
+
+@media screen and (max-width:878px)  {
+    .typeBut button, .buyNow{
+        font-size: 14px;
+    }
+
+    .product{
+        width: 30%;
+    }
+}
+
+@media screen and (max-width:648px) {
+    .headerNav ul {
+        flex-wrap: wrap;
+
+    }
+
+    .headerNav ul li {
+        font-size: 15px;
+        padding: 0 3%;
+    }
+
+    .mainBig {
+        padding: 5%;
+    }
+
+    .mainBig div:first-child img{
+width: 100%;
+    }
+    .mainBig div:first-child {
+        width: 50%;
+    }
+    .mainBig h1 {
+        font-size: 34px;
+    }
+    .brandedGallery{
+        flex-direction: column;
+    }
+
+    .brandedCategory{
+        width: 95%;
+        margin: 0 auto;
+        align-items: center;
+        justify-content: space-between;
+        border-right: none;
+        border-bottom: 2px lightgray solid;
+    }
+.brandedCategory div:first-child {
+    width: 100%;
+}
+    .brandedCategory img {
+        height: 100%;
+        margin: 0 auto;
+        display: block;
+        width: auto;
+    }
+
+    .product{
+        width: 39%;
+        padding: 2% 1%;
+    }
+
+    footer h3{
+        font-size: 16px;
+    }
+
+    .footerCategories ul {
+        font-size: 10px;
+    }
+
+    .headerLogo span {
+        font-size:20px ;
+    }
+    
+    .headerLogo {
+        justify-content: last baseline;
+    }
+
+    .headerLogo div:last-child{
+        width: 23%;
+    }
+
+    .headerLogo input {
+        width: 85%;
+    }
+}
+
+@media screen and (max-width:500px) {
+    .product img {
+        height: 100px;
+        width: auto;
+    }
+
+    .product{
+        width: 43%;
+    }
+
+    .product h4{
+        font-size: 20px;
+    }
+
+    .footerCategories {padding: 1%;}
+
+    .footerCategories h3 {
+        margin: 1%;
+        font-size: 16px;
+    }
+}
