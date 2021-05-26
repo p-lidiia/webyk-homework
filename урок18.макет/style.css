@@ -1,0 +1,256 @@
+.container{
+    max-width: 100%;
+}
+
+header{
+    background-image: linear-gradient(to bottom, white, #e2e2e2);
+    align-items: center;
+    padding: 0 8%;
+    justify-content: space-between;
+}
+
+header div {
+    align-items: center;
+}
+
+.navigation {width: 37%;}
+
+a:link, a:active, a:visited{
+    color: inherit;
+    text-decoration: inherit;
+}
+
+ .navButton:hover {
+    background-image: linear-gradient(to bottom,white, #ccc3c3);
+    border-bottom: solid #ff7d00 5px;
+    padding-bottom: 10px;
+}
+
+.navButton {
+    padding: 30px 0;
+    text-align: center;
+    border-left: 1px solid #c7c1c1;
+    font-size: 14px;
+ 
+}
+
+.navButton:first-child {border-left: none;}
+
+.navButton p {
+    padding: 0;
+    margin: 0;
+}
+
+.navButton img {
+    display: block;
+    margin: 0 auto;
+}
+
+h1{
+    font-size: 26px;
+    margin: 2%;
+}
+
+form {
+    width: 50%;
+    margin: 0 auto;
+    margin-bottom: 4%;
+    display: flex;
+    align-items: center;
+}
+
+input[type="file"] {
+    border: 1px solid #cacaca;
+    outline: none;
+    padding: 7px;
+    border-radius: 3px;
+    width: 67%;
+    vertical-align: bottom;
+    margin-right: 2%;
+    box-shadow: inset 0px 2px 8px -1px lightgrey;
+}
+
+::-webkit-file-upload-button {
+    background-color: #cacaca;
+    border: none;
+    outline: none;
+    border-radius: 3px;
+    float: right;
+    color: white;
+}
+
+input span[area-hidden] {
+    visibility: hidden;
+}
+
+input[type="submit"]{
+    background-image: linear-gradient(to bottom, #ffa300, #ff6700);
+    color: white;
+    border: none;
+    outline: none;
+    border-radius: 3px;
+    font-weight: 700;
+    font-size: 22px;
+    padding: 5px 20px;
+}
+
+.picsGallery {
+    width: 80%;
+    margin: 0 auto;
+}
+
+.galleryItem {
+box-sizing: border-box;}
+
+.picCard {
+    margin: 5%;
+    box-shadow: 0px 0px 3px 0px grey, 0px -5px 9px -3px lightgrey inset;
+    padding: 3%;
+}
+
+.pic{
+    position: relative;
+}
+
+.pic img {width: 100%;
+height: auto;}
+
+.date {
+    color: white;
+    font-family: 'Bebas Neue', cursive;
+    position: absolute;
+    width: 96%;
+    padding-left: 3%;
+    top: 89%;
+}
+
+.descr {
+    border-bottom: 1px solid #e0dfdf;
+    color: #979393;
+    padding: 2%;
+    margin-block-end: 0;
+    font-size: 1vw;
+}
+
+.descr img {
+    float: right;
+}
+
+.descr img:hover {
+    background-color: #f3f7aa;
+    border-radius: 50px;
+}
+
+.social{
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    width: 100%;
+}
+
+.social span{
+    color: #9f9898;
+    margin: 1%;
+    font-size: 1vw;
+}
+
+.icon {
+    background-color: #b1aeae;
+    border-radius: 50px;
+    width: 22px;
+    height: 22px;
+    display: inline-block;
+}
+
+.icon:nth-child(2):hover {
+    background-color: #4cd5f3;
+}
+
+.icon:nth-child(3):hover {
+    background-color: #283e8f;
+}
+
+.icon:nth-child(4):hover {
+    background-color: #f50d0d;
+}
+
+.icon:nth-child(5):hover {
+    background-color: #091337;
+}
+
+.icon img {
+    display: block;
+    margin: 4px auto;
+}
+
+footer{
+    color: #8b8a8a;
+    padding: 3% 0;
+    text-align: right;
+    width: 73%;
+    margin: 0 auto;
+}
+
+@media screen and (max-width:1200px) {
+    .date{
+        top:85%;
+    }
+
+    .descr {
+        padding: 6% 2%;
+    }
+
+    .social {
+        padding: 2% 0;
+    }
+}
+
+@media screen and (max-width:992px) {
+    .descr, .social span{
+        font-size: 1.5vw;
+    }
+    form {
+        width: 70%;
+    }
+
+    .navigation {
+        width: 50%;
+    }
+    header {
+        padding: 0 3%;
+    }
+}
+
+@media screen and (max-width:768px) {
+    form {
+        width: 90%;
+    }
+
+    .descr, .social span {
+        font-size: 2.5vw;
+    }
+}
+
+@media screen and (max-width:576px) {
+    header {
+        align-items: center;
+        justify-content: center;
+        padding: 3%;
+    }
+
+    .navigation {
+        width: 80%;
+    }
+
+    .descr, .social span {
+        font-size: 4vw;
+    }
+
+    form {
+        flex-direction: column;
+    }
+
+    main form input {
+        margin: 3%;
+    }
+}
