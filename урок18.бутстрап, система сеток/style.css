@@ -1,0 +1,20 @@
+.div1 {
+    flex-wrap: nowrap;
+}
+
+
+.div1 div{
+    background-color: blueviolet;
+    
+}
+
+.div2 div {
+    background-color: yellowgreen;
+ 
+}
+ 
+@media screen and (max-width:992px){
+    .div2 {
+        flex-direction: columns;
+    }
+}

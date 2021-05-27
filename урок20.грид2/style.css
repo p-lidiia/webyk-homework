@@ -1,0 +1,170 @@
+.gridDiv {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    grid-template-rows: 1fr 1fr 1fr 1fr;
+    justify-content: center;
+    gap: 10px;
+    margin-bottom: 30px;
+}
+
+.gridDiv div {
+    background-color:rgb(221, 204, 106);
+    padding: 10px;
+}
+
+.grBlock1, .grBlock2, .grBlock3, .grBlock4{
+    grid-row: 1;
+}
+
+.grBlock5 {
+    grid-column:1/5;
+    grid-row: 2;
+}
+
+.grBlock6 {
+    grid-column: 1/4;
+    grid-row: 3;
+}
+
+.grBlock7 {
+    grid-column: 4;
+    grid-row: 3;
+}
+
+.grBlock8 {
+    grid-column: 1/3;
+    grid-row: 4;
+}
+
+.grBlock9 {
+    grid-column: 3/5;
+    grid-row: 4;
+}
+
+
+.videoTaskGrid {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    grid-template-rows: 1fr 1fr 1fr 1fr;
+    gap: 10px;
+}
+
+.videoTaskGrid div {
+    background-color: powderblue;
+    padding: 10px;
+}
+
+.gridDiv1 {
+    grid-column: 1/5;
+    grid-row: 1;
+    background-color: blueviolet!important;
+}
+
+.gridDiv2 {
+    grid-column: 1;
+    grid-row: 2;
+}
+
+.gridDiv3 {
+    grid-column: 2;
+    grid-row: 2;
+}
+
+.gridDiv4 {
+    grid-column: 3;
+    grid-row: 2;
+}
+
+.gridDiv5 {
+    grid-column: 4;
+    grid-row: 2;
+}
+
+.gridDiv6 {
+    grid-column: 1;
+    grid-row: 3;
+}
+
+.gridDiv7 {
+    grid-column: 2;
+    grid-row: 3;
+}
+
+.gridDiv8 {
+    grid-column: 3;
+    grid-row: 3;
+}
+
+.gridDiv9 {
+    grid-column: 4;
+    grid-row: 3/5;
+    background-color: palevioletred!important;
+}
+
+.gridDiv10 {
+    grid-column: 1;
+    grid-row: 4;
+}
+
+.gridDiv11 {
+    grid-column: 2;
+    grid-row: 4;
+}
+
+.gridDiv12 {
+    grid-column: 3;
+    grid-row: 4;
+}
+
+
+@media screen and (max-width:992px) {
+    .gridDiv {
+        grid-auto-flow: row dense;
+    }
+  
+    .grBlock1 {
+        grid-column: 1/3;
+        grid-row: 1;
+    }
+
+    .grBlock2 {
+        grid-column: 3/5;
+        grid-row: 1;
+    }
+
+    .grBlock3 {
+        grid-column: 1;
+        grid-row: 2;
+    }
+
+    .grBlock4 {
+        grid-column: 2/5;
+        grid-row: 2;
+    }
+
+    .grBlock5 {
+        grid-column: 1/5;
+        grid-row: 3;
+    }
+
+    .grBlock6 {
+        grid-column: 1;
+        grid-row: 4;
+    }
+
+    .grBlock7 {
+        grid-column: 2;
+        grid-row: 4;
+    }
+
+    .grBlock8 {
+        grid-column: 3;
+        grid-row: 4;
+    }
+
+    .grBlock9 {
+        grid-column: 4;
+        grid-row: 4;
+    }
+    
+}
