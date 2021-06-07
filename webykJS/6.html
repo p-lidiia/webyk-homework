@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>anon functions</title>
+    <style>
+       
+        .magicDiv {
+            display: none;
+            background-color: blueviolet;
+            padding: 10px;
+            color: white;
+            width: fit-content;
+        }
+
+.closeModal {
+    cursor: pointer;
+}
+
+.closeModal:hover {
+    color: black;
+}
+
+ .visible {
+            display: block;
+        }
+
+    </style>
+</head>
+<body>
+<div class="firstTask">
+    task 1
+    <button class="magicButton" onclick="showModal()">click me</button>
+    <div class="magicDiv">MAGIC <p class="closeModal" onclick="hideModal()">x</p> </div>
+</div>
+ task 2
+<div class="anonFunctions">
+    <form action="">
+        <input id="anonInput" type="text">
+        <button id="anonButton"> o </button>
+    </form>
+    <div class="test2"></div>
+</div>
+
+    <script>
+        //после видео. НЕАНОНИМНЫЕ
+        function showModal(){
+document.getElementsByClassName('magicDiv')[0].classList.add('visible')
+        }
+
+         function hideModal() {
+ document.getElementsByClassName('magicDiv')[0].classList.remove('visible')}
+    
+
+        //в видео АНOНИМНЫЕ (но не поняла тут роль кнопки, для работы функции она так и не пригодилась)
+document.getElementById('anonInput').onblur = function(){
+    document.getElementsByClassName('test2')[0].innerHTML = document.getElementById('anonInput').value
+}
+    </script>
+</body>
+</html>

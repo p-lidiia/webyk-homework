@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>task 3</title>
+</head>
+<body>
+    
+<div class="phone">
+
+</div>
+
+    <script>
+//задание после видео
+let tovars = ['phone', 'sd-card']
+tovars.pop() // удалить второй
+tovars.push('usb-lamp') // добавить лампу
+tovars[1] = ['protective glass', 'silicon case'] //перезаписать третий 
+// (их осталось два, не знаю какой в задании третий, посчитала как третий ДО удаления второго)
+// и создать вложенный массив
+console.log(tovars);
+
+//задание из видео
+let phones = ['xiaomi', 'soni', ['oneplus','8t pro'], 'oppo', 'samsung']
+document.getElementsByClassName('phone')[0].innerHTML = phones[2]
+
+
+    </script>
+</body>
+</html>

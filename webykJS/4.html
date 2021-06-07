@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>task 4 objects</title>
+</head>
+<body>
+    <div class="test"> первый див с классом тест</div>
+    <div class="test">второй див с классом тест</div>
+    <input type="text" id="hello" name="hello">
+
+    <script>
+// задание в видео
+let firstItem = {
+    id:1,
+    name: 'pizza',
+    price: '50 uah'
+}
+
+let secondItem = {
+    id:2,
+    name: 'lemonade',
+    price: '10 uah'
+}
+
+let thirdItem = {
+    id:3,
+    name: 'burger',
+    price: '25 uah'
+}
+
+firstItem.price = '70 uah'
+
+console.log(firstItem);
+
+
+// задание после видео (данной информации в уроке не было)
+
+console.log(document.getElementsByClassName('test')[1].innerHTML);
+document.getElementById('hello').value = 'hello world'
+
+document.getElementsByName('hello')[0].style.borderColor = "green"
+
+document.getElementsByTagName('body')[0].appendChild(document.createElement('div')).classList.add('newDiv1')
+document.getElementsByClassName('newDiv1')[0].id="test1"
+document.getElementById('test1').innerHTML = 'Меня создали только с помощью JS'
+
+document.getElementsByTagName('body')[0].appendChild(document.createElement('div')).classList.add('newDiv2')
+document.getElementsByClassName('newDiv2')[0].id="test2"
+document.getElementById('test2').innerHTML = document.getElementById('test1').innerHTML + ' урра'
+
+
+    </script>
+
+</body>
+</html>

@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>task 5 local storage </title>
+    <style>
+        .reseiveInputText, form{
+            display: inline-block;
+            width: 40%;
+            padding: 5px;
+        }
+
+      
+    </style>
+</head>
+<body>
+    <div class="firstDiv">
+        <button class="buttonName" value="Меня зовут Кнопка" onclick="getButtonName()">Кликни, чтобы узнать моё имя</button>
+    </div>
+
+    <div class="secondDiv">
+        <form action="">
+            <input class="searchInput" type="search">
+            <input type="button" onclick="getInputText()" value="Button">
+        </form>
+        <div class="reseiveInputText"></div>
+    </div>
+<a href="5.2.html">вторая страница для проверки localStorage</a>
+
+    <script>
+
+//после видео
+function getButtonName() {
+    alert(document.getElementsByClassName('buttonName')[0].value)
+}
+function getInputText() {
+document.getElementsByClassName('reseiveInputText')[0].innerHTML = document.getElementsByClassName('searchInput')[0].value
+}
+
+
+
+
+//в видео
+let itemsArray = ['Apple Iphone 12 Pro', 'Xiaomi Mi mix 4', 'Oppo Reno 4 Pro', 'Pixel 4XL Not Pink', 'OnePlus 8T Pro'] 
+//в консоль выводится и без перевода в строку, но перевод выполню для точности задания
+toString(itemsArray)
+localStorage.setItem('items', itemsArray);
+console.log(localStorage.getItem('items'));
+
+    </script>
+</body>
+</html>
