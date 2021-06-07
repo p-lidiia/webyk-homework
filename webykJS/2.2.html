@@ -14,15 +14,15 @@
 
     let uahAmount1 = prompt('Введите сумму в грн для перевода в доллар')
     let usdAmount = Number(uahAmount1)*0.037
-    alert(uahAmount1 + 'грн = ' + usdAmount +'$')
+    alert(uahAmount1 + 'грн = ' + usdAmount.toFixed(2) +'$')
 
     let uahAmount2 = prompt('Введите сумму в грн для перевода в евро')
     let euroAmount = Number(uahAmount2)*0.03
-    alert(uahAmount2 + 'грн = ' + euroAmount +'€')
+    alert(uahAmount2 + 'грн = ' + euroAmount.toFixed(2) +'€')
 
     let uahAmount3 = prompt('Введите сумму в грн для перевода в фунты')
     let poundAmount = Number(uahAmount3)*0.026
-    alert(uahAmount3 + 'грн = ' + poundAmount +'GBP')
+    alert(uahAmount3 + 'грн = ' + poundAmount.toFixed(2) +'GBP')
 
 </script>
 
