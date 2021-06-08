@@ -1,0 +1,168 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>7 modals</title>
+    <style>
+.toysGallery{
+    width: 80%;
+    margin: 10px auto;
+    display: flex;
+    padding: 10px;
+    background-color: rgb(230, 36, 36);
+    font-family: 'Press Start 2P', cursive;
+    text-align: center;
+    color: white
+
+}
+button {
+    font-family: 'Press Start 2P', cursive;
+    background-color: royalblue;
+    padding: 10px;
+    width: fit-content;
+    display: block;
+    margin: 0 auto;
+}
+
+.toy {
+    display: flex;
+    flex-direction: column;
+    padding: 10px;
+}
+
+.toy img {
+    width: 80%;
+    margin: 0 auto;
+    display: block;
+}
+
+.shoppingCart {
+    background-color: rgb(230, 36, 36);
+    padding: 10px;
+    font-family: 'Press Start 2P', cursive;
+    color: white;
+    width: 80%;
+    margin: 0 auto;
+    display: none;
+}
+
+.shoppingCart div {
+    margin: 10px;  
+    padding: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+
+.shoppingCart img {
+    width: 5%;
+    margin-right: 10px;
+}
+
+.catalogHead {
+    display: flex;
+    width: 80%;
+    margin: 0 auto;
+    font-family: 'Press Start 2P', cursive;
+    color: white;
+    background-color: rgb(230, 36, 36);
+    padding: 10px;
+    align-items: center;
+    justify-content: space-around;
+}
+
+.catalogHead button{
+    margin: 0;
+}
+
+.visible {
+    display: block;
+}
+    </style>
+  <link rel="preconnect" href="https://fonts.gstatic.com">
+  <link href="https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div class="functionsTask">
+        <button class="task1button"> ;) </button>
+        <div class="block1" style="text-align: center; font-family: 'Press Start 2P', cursive;"></div>
+    </div>
+<div class="catalogHead"> <h1>Каталог</h1> <button onclick="showCart()">Корзина</button> </div>
+    <div class="toysGallery">
+        <div class="toy">
+<p class="name">Халк</p>
+<div class="toyImg"><img src="img7/hulk.jpg" alt="" class="pic"></div>
+<p class="price">275 грн</p>
+<button class="buy">Купить</button>
+        </div>
+
+        <div class="toy">
+            <p class="name">Танос</p>
+            <div class="toyImg"><img src="img7/thanos.jpg" alt="" class="pic"></div>
+            <p class="price">300 грн</p>
+            <button class="buy">Купить</button>
+        </div>
+
+        <div class="toy">
+            <p class="name">Веном</p>
+           <div class="toyImg"> <img src="img7/venom.jpg" alt="" class="pic"></div>
+            <p class="price"> 420 грн</p>
+            <button class="buy" onclick="addToCart('Веном', 420, 1)">Купить</button>
+        </div>
+    </div>
+<div class="shoppingCart">
+
+<h1> <span onclick="hideCart()" style="cursor: pointer;">x</span> Корзина</h1>
+</div>
+    <script>
+        //после видео
+document.getElementsByClassName('task1button')[0].onclick = function() {
+    document.getElementsByClassName('block1')[0].innerHTML = 'Это моя функция';
+    this.onclick = function() {
+        alert(document.getElementsByClassName('block1')[0].innerHTML =  document.getElementsByClassName('block1')[0].innerHTML + ', честно!')
+    }
+    }
+
+
+
+    let buyButton = document.querySelectorAll('.buy')
+   
+  
+   
+    for (let i = 0; i < buyButton.length; i++) {    
+         let name = document.querySelectorAll('.name')[i].innerHTML
+         let price = document.querySelectorAll('.price')[i].innerHTML
+         let amount = 1
+         let pic = document.querySelectorAll('.toyImg')[i].innerHTML
+
+buyButton[i].onclick = function addToCart(){ 
+      let checkToy = confirm (document.querySelectorAll('.price')[i].innerHTML) 
+     
+   
+
+           if (checkToy == true) {
+    let cart = document.getElementsByClassName('shoppingCart')[0]
+    let cartItem =  "<div>" + pic + '<b>Название товара:</b> ' + name + '.   <b>Цена:</b> ' + price + '.   <b>Количество:</b> ' + amount + ' шт' +"<span onclick='removeFromCart(this)'> <button> Удалить из корзины </button> </span> </div>";
+    cart.innerHTML = cart.innerHTML + cartItem
+       } else if (checkToy == false) {
+alert('Надеемся, другой товар Вам понравится больше!');
+console.log(name);
+       }
+      }
+     }
+   function removeFromCart(cartItem) {
+    cartItem.parentNode.remove();
+}
+let cart = document.getElementsByClassName('shoppingCart')[0]
+function showCart()  {
+    cart.classList.add('visible')
+}
+
+function hideCart() {
+    cart.classList.remove('visible')}
+    </script>
+</body>
+</html>
