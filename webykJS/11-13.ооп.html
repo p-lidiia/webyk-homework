@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    
+<div class="testDiv"> test div text</div>
+
+
+<script>
+
+class testClass {
+    constructor(y){
+     
+        this.y = y;
+    }
+
+ test () {
+     
+    return this.y;
+ }
+
+ test2(x) {
+     return x
+ }
+}
+
+let myClass = new testClass('hello constructor');
+console.log(myClass.test());
+
+class testClass2 extends testClass{
+    constructor(name, x) {
+        super(name);
+        this.name = name;
+    }
+    sayHello() {
+        return "say Hello";
+    }
+}
+
+let myTest2 = new testClass2('Lidiia', '23');
+console.log(myTest2.test());
+
+</script>
+</body>
+</html>

@@ -1,0 +1,347 @@
+.container {
+    max-width: 100%;
+    padding: 0;
+}
+
+.row {
+    margin-left: 0;
+}
+
+.headerAd {
+    width: 100%;
+    background-image: url(img/headerAd.jpg);
+    background-repeat: no-repeat;
+    background-color: rgb(228, 203, 206);
+    background-position: center;
+    height: 32px;
+}
+
+header{
+    background-color: #221f1f;
+    color: white;
+    width: 100%;
+    margin: 0;
+    padding: 20px 5%;
+    align-items: center;
+}
+
+
+.fas {
+    font-size: 26px;
+}
+
+.buttonCatalog {
+    padding: 10px;
+    background-color: rgba(255, 255, 255, 0.3);
+    border-radius: 5px;
+    display: flex;
+}
+
+.buttonCatalog p {
+    padding: 0;
+    margin:  0;
+    margin-block-end: 0;
+    margin-block-start: 0;
+    line-height: 1;
+    font-size: 10px;
+}
+
+.headerMiddle {
+display: flex;
+justify-content: space-between;
+}
+
+header form {
+    display: flex;
+    align-items: center;
+    width: 70%;
+    background-color: white;
+    border-radius: 5px;
+    justify-content: space-between;}
+
+header input[type="search"] {
+    background-image: url('img/search.png');
+    background-repeat: no-repeat;
+    background-size: 5%;
+    background-position: 3% center;
+    border-radius:  5px 0 0 5px ;
+    border: none;
+    outline: none;
+    height: 100%;
+    padding: 5px 0% 5px 10%;
+    width: 85%;;
+
+}
+
+.micro {
+    vertical-align: middle;
+    color: lightskyblue;
+    font-size: 15px;
+    background-color: white;
+    padding: 10px 20px;
+    border-left: 1px solid lightgrey;
+}
+
+.micro:hover {
+    color: #f84147;
+}
+
+header input[type="submit"] {
+    background-color: #00a046;
+    border-radius:  0 5px 5px 0;
+   padding: 5px 15px;
+    color: white;
+    border: none;
+    outline: none;
+    height: 100%;
+    
+} 
+
+.fa-square {padding: 1px;}
+
+.fas {
+    vertical-align: middle;
+}
+
+a:link, a:active, a:visited {
+    color: inherit;
+    text-decoration: inherit;
+}
+
+.langSwitch{
+    color: lightgrey;
+
+}
+
+.langSwitch a {
+    color: lightgrey;
+    padding: 0 5px;
+}
+.langSwitch a:first-child {border-right: 1px solid lightgrey;}
+
+.langSwitch a:hover {
+    color: #f84147;
+}
+
+.premium {
+    display: inline-flex;
+    flex-direction: column;
+    width: 32%;
+    text-align: center;
+    font-size: 11px;
+    padding: 10px;
+}
+
+.headerRight{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+}
+
+.account {
+    display: flex;
+    width: 30%;
+    justify-content: space-between;
+}
+
+.account span {
+    margin: 0 1%;
+    font-size: 1vw;
+    padding: 10px;
+    transition: all .2s ease-in-out;
+}
+
+.account span:hover, .premium:hover {
+    background-color:  rgba(255, 255, 255, 0.3);
+    border-radius: 5px;
+    transition: all .2s ease-in-out;
+  
+}
+
+.sideBar {
+    border-right: 1px solid lightgray;
+    width: 20%;
+}
+
+.catalog, .support ul {
+    list-style-type: none;
+    padding-right: 15px;
+    color: #3e77aa;
+   padding-top: 25px;padding-left: 4rem;
+}
+
+.catalog li {
+    padding: 5px 0;}
+
+.catalog li:after {
+    content: url(img/chevron-right-solid.svg);
+    float: right;
+    filter: invert(1) sepia(1) saturate(50) hue-rotate(171deg) brightness(0.6) contrast(2.5);
+    width: 6px;
+}
+
+.catalog li i {
+    display: inline-block;
+    width: 40px;
+    text-align: center;
+    margin-right: 5px;
+}
+
+.specialOfferCarousel {
+    width: 90%;
+    margin: 0 auto;
+    margin-top:  30px;
+}
+
+.carousel-inner {
+    display: flex;
+    width: 93%;
+}
+.carousel-control-prev {
+height: 100%;
+background-image:linear-gradient(to left, transparent,  #fff);
+width: 3% !important;
+opacity: 1;
+}
+
+.carousel-control-next{
+    height: 100%;
+background-image:linear-gradient(to right, transparent, #fff);
+width: 3% !important;
+opacity: 1;
+}
+
+.carousel-control-next-icon, .carousel-control-prev-icon {
+    display: inline-block;
+    width: 1rem;
+    height: 3rem;
+    background-repeat: no-repeat;
+    background-position: 50%;
+    background-size: 245% 759%;
+    filter: sepia(1) saturate(0.5), hue-rotate(165deg);
+   
+    
+}
+
+.carousel-control-next, .carousel-control-prev {
+    width: auto;
+}
+
+h2{
+    margin-bottom: 16px;
+    margin-top: 50px;
+    font-size: 20px;
+}
+
+.lastWatched, .moreChoise, .bestByCategory, .onlyRozetka, .hotNewArrivals {
+    border-bottom: 1px solid lightgrey;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    width: 90%;
+    margin: 0 auto;
+}
+
+.watchedItem, .choiseItem, .bestItem, .rozetkaItem, .newItem {
+    display: flex;
+    flex-direction: column;
+    border-right: 1px solid lightgrey;
+    width: 20%;
+}
+
+.watchedItem img, .choiseItem img, .bestItem img, .rozetkaItem img, .newItem img {
+   
+    max-height: 140px;
+    max-width: 100%;
+    display: block;
+    margin: 0 auto;
+}
+
+.showMoreButton {
+    border: 1px solid lightgrey;
+    border-radius: 0 0 5px 5px;
+    background-color: white;
+    float: right;
+    width: 19%;
+    margin-top: 1%;
+    margin-right: 5%;
+    padding: 8px;
+}
+.fav {
+    text-align: right;
+}
+
+.fav:after {
+    content: '\2661';
+    font-size: 30px;
+    color: orange;
+    font-weight: 500;
+}
+.price {
+    font-size: 24px;
+}
+
+.price:after {
+    content: ' ₴';
+    font-size: 18px;
+}
+
+.oldPrice {
+   color: #a6a5a5;
+   text-decoration: overline;
+
+}
+
+.itemImg {
+    max-width: 140px;
+    height: 170px;
+    margin: 0 auto;
+}
+
+.supportUlHeading {
+font-size: 12px;
+color: #797878;
+margin-bottom: 0;
+}
+
+.support ul li a:hover, .catalog li:hover, .showMoreButton:hover {
+    text-decoration: underline;
+    color: #f84147;
+}
+
+.welcome {
+    background-color:#f4f4f4;
+    text-align: center;
+    padding: 35px 20px;
+}
+
+.welcome h3 {
+    font-size: 20px;
+}
+
+.welcome p {
+    font-size: 12px;
+}
+
+.welcome button {
+    padding: 5px 16px;
+    background-color: #3e77aa;
+    color: #fff;
+    font-size: 15px;
+    border-radius: 5px;
+    border: none;
+    outline: none;
+    margin: 0 auto;
+    display: block;
+}
+
+.showMoreButton:hover {
+    text-decoration: none;
+}
+
+.catalog li:hover > .catalog li i, .catalog li .fas {
+    color:  #3e77aa;
+    text-decoration: none;
+}

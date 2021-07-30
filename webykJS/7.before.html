@@ -95,21 +95,21 @@ button {
         <div class="toy">
 <p class="name">Халк</p>
 <div class="toyImg"><img src="img7/hulk.jpg" alt="" class="pic"></div>
-<p class="price">275</p>
+<p class="price">275 грн</p>
 <button class="buy">Купить</button>
         </div>
 
         <div class="toy">
             <p class="name">Танос</p>
             <div class="toyImg"><img src="img7/thanos.jpg" alt="" class="pic"></div>
-            <p class="price">300</p>
+            <p class="price">300 грн</p>
             <button class="buy">Купить</button>
         </div>
 
         <div class="toy">
             <p class="name">Веном</p>
            <div class="toyImg"> <img src="img7/venom.jpg" alt="" class="pic"></div>
-            <p class="price"> 420</p>
+            <p class="price"> 420 грн</p>
             <button class="buy" onclick="addToCart('Веном', 420, 1)">Купить</button>
         </div>
     </div>
@@ -127,43 +127,36 @@ document.getElementsByClassName('task1button')[0].onclick = function() {
     }
 
 
+
     let buyButton = document.querySelectorAll('.buy')
    
+  
    
     for (let i = 0; i < buyButton.length; i++) {    
          let name = document.querySelectorAll('.name')[i].innerHTML
          let price = document.querySelectorAll('.price')[i].innerHTML
-         let amount = 0
-         amount = ++amount
+         let amount = 1
          let pic = document.querySelectorAll('.toyImg')[i].innerHTML
 
 buyButton[i].onclick = function addToCart(){ 
-      let checkToy = confirm ((document.querySelectorAll('.price')[i].innerHTML) + ' грн')
+      let checkToy = confirm (document.querySelectorAll('.price')[i].innerHTML) 
      
+   
 
            if (checkToy == true) {
     let cart = document.getElementsByClassName('shoppingCart')[0]
-
-    
-    let cartItem =  "<div>" + pic + '<b>Название товара:</b> ' + name + '.   <b>Цена(за 1 шт):</b> ' + price + 'грн.    <b>Количество:</b> <span class="amountC">' + amount + '</span> шт' +"<span onclick='removeFromCart(this)'> <button> Удалить из корзины </button> </span> </div>";
-    
-    buyButton[i].onclick = function() { 
-     
-            
-            
-            buyButton[i].onclick = function() {
-                amount = ++amount
-                cartItem = "<div>" + pic + '<b>Название товара:</b> ' + name + '.   <b>Цена(за 1 шт):</b> ' + price + 'грн.   <b>Количество:</b>  <span class="amountC">' + amount + '</span> шт' +"<span onclick='removeFromCart(this)'> <button> Удалить из корзины </button> </span> </div>";
-        
-             
-console.log(amount);
-            }
-        cart.innerHTML = cart.innerHTML + cartItem
+    let cartItem =  "<div>" + pic + '<b>Название товара:</b> ' + name + '.   <b>Цена:</b> ' + price + '.   <b>Количество:</b> ' + amount + ' шт' +"<span onclick='removeFromCart(this)'> <button> Удалить из корзины </button> </span> </div>";
+    cart.innerHTML = cart.innerHTML + cartItem
+   function addToCart(){
+        amount = ++amount
+        cartItem =  "<div>" + pic + '<b>Название товара:</b> ' + name + '.   <b>Цена:</b> ' + price + '.   <b>Количество:</b> ' + ++amount + ' шт' +"<span onclick='removeFromCart(this)'> <button> Удалить из корзины </button> </span> </div>";
+        cart.amount = ++amount
+        cart.innerHTML = cart.innerHTML 
 
     }
        } else if (checkToy == false) {
 alert('Надеемся, другой товар Вам понравится больше!');
-
+console.log(name);
        }
       }
      }
